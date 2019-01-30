@@ -1,0 +1,12 @@
+C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\bin\Debug\learn_opentk.exe.config
+C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\bin\Debug\learn_opentk.exe
+C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\bin\Debug\learn_opentk.pdb
+C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\bin\Debug\OpenTK.dll
+C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\bin\Debug\OpenTK.pdb
+C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\bin\Debug\OpenTK.xml
+C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\obj\Debug\learn_opentk.csprojResolveAssemblyReference.cache
+C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\obj\Debug\learn_opentk.Properties.Resources.resources
+C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\obj\Debug\learn_opentk.csproj.GenerateResource.Cache
+C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\obj\Debug\learn_opentk.csproj.CoreCompileInputs.cache
+C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\obj\Debug\learn_opentk.exe
+C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\obj\Debug\learn_opentk.pdb
