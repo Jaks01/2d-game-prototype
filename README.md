@@ -1,2 +1,2 @@
-# 2d-game-prototype
+# learn-opentk
 using OpenTK
