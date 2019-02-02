@@ -64,7 +64,7 @@ namespace learn_opentk
 
         public void Render()
         {
-            GL.BindVertexArray(_vertexArray);
+            Bind();
             GL.DrawArrays(PrimitiveType.Triangles, 0, _verticesCount);
         }
 

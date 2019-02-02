@@ -29,7 +29,8 @@ namespace learn_opentk
         {
             _title += Title + ": GL VER: " + GL.GetString(StringName.Version);
             Title = _title;
-            VSync = VSyncMode.Off;
+            VSync = VSyncMode.Adaptive;
+            CursorVisible = true;
         }
 
         //reset viewport if game window changes
@@ -53,13 +54,17 @@ namespace learn_opentk
             base.Exit();
         }
 
-        private int _temp;
         //gets called when the window is loaded, use to initialize
         protected override void OnLoad(EventArgs e)
         {
-            CursorVisible = true;
+
             CreateProjection();
             _rendObjects.Add(new RenderObject(ObjectFactory.CreateSolidCube(0.2f, Color4.GreenYellow)));
+            _rendObjects.Add(new RenderObject(ObjectFactory.CreateSolidCube(0.2f, Color4.HotPink)));
+            _rendObjects.Add(new RenderObject(ObjectFactory.CreateSolidCube(0.2f, Color4.BlueViolet)));
+            _rendObjects.Add(new RenderObject(ObjectFactory.CreateSolidCube(0.2f, Color4.Red)));
+            _rendObjects.Add(new RenderObject(ObjectFactory.CreateSolidCube(0.2f, Color4.LimeGreen)));
+
 
             _program = CompileShader();
             GL.PolygonMode(MaterialFace.FrontAndBack, PolygonMode.Fill);
@@ -138,11 +143,24 @@ namespace learn_opentk
             GL.UniformMatrix4(20, false, ref _projectionMatrix);
             GL.UniformMatrix4(21, false, ref _modelView);
 
-            foreach (var renderObj in _rendObjects)
+            float c = 0f;
+            foreach (var renderObject in _rendObjects)
             {
-                renderObj.Bind();
-                renderObj.Render();
-
+                for (int i = 0; i < 5; i++)
+                {
+                    var k = i + (float)(_time * (0.05f + (0.1 * c)));
+                    var t2 = Matrix4.CreateTranslation(
+                        (float)(Math.Sin(k * 5f) * (c + 0.5f)),
+                        (float)(Math.Cos(k * 5f) * (c + 0.5f)),
+                        -2.7f);
+                    var r1 = Matrix4.CreateRotationX(k * 13.0f + i);
+                    var r2 = Matrix4.CreateRotationY(k * 13.0f + i);
+                    var r3 = Matrix4.CreateRotationZ(k * 3.0f + i);
+                    var modelView = r1 * r2 * r3 * t2;
+                    GL.UniformMatrix4(21, false, ref modelView);
+                    renderObject.Render();
+                }
+                c += 0.3f;
             }
             GL.PointSize(10);
             SwapBuffers();

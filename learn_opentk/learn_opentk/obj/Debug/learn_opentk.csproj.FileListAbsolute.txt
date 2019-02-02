@@ -10,3 +10,15 @@ C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\obj\Debug\learn_opentk
 C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\obj\Debug\learn_opentk.csproj.CoreCompileInputs.cache
 C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\obj\Debug\learn_opentk.exe
 C:\Users\Jackson\Desktop\OpenTK\learn_opentk\learn_opentk\obj\Debug\learn_opentk.pdb
+C:\Users\Jackson\Documents\GitHub\2d-game-prototype\learn_opentk\learn_opentk\bin\Debug\learn_opentk.exe.config
+C:\Users\Jackson\Documents\GitHub\2d-game-prototype\learn_opentk\learn_opentk\bin\Debug\learn_opentk.exe
+C:\Users\Jackson\Documents\GitHub\2d-game-prototype\learn_opentk\learn_opentk\bin\Debug\learn_opentk.pdb
+C:\Users\Jackson\Documents\GitHub\2d-game-prototype\learn_opentk\learn_opentk\bin\Debug\OpenTK.dll
+C:\Users\Jackson\Documents\GitHub\2d-game-prototype\learn_opentk\learn_opentk\bin\Debug\OpenTK.pdb
+C:\Users\Jackson\Documents\GitHub\2d-game-prototype\learn_opentk\learn_opentk\bin\Debug\OpenTK.xml
+C:\Users\Jackson\Documents\GitHub\2d-game-prototype\learn_opentk\learn_opentk\obj\Debug\learn_opentk.csprojResolveAssemblyReference.cache
+C:\Users\Jackson\Documents\GitHub\2d-game-prototype\learn_opentk\learn_opentk\obj\Debug\learn_opentk.Properties.Resources.resources
+C:\Users\Jackson\Documents\GitHub\2d-game-prototype\learn_opentk\learn_opentk\obj\Debug\learn_opentk.csproj.GenerateResource.Cache
+C:\Users\Jackson\Documents\GitHub\2d-game-prototype\learn_opentk\learn_opentk\obj\Debug\learn_opentk.csproj.CoreCompileInputs.cache
+C:\Users\Jackson\Documents\GitHub\2d-game-prototype\learn_opentk\learn_opentk\obj\Debug\learn_opentk.exe
+C:\Users\Jackson\Documents\GitHub\2d-game-prototype\learn_opentk\learn_opentk\obj\Debug\learn_opentk.pdb
