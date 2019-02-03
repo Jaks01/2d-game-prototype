@@ -20,4 +20,18 @@ namespace learn_opentk
             color = _col;
         }
     }
+
+    public struct TexturedVertex
+    {
+        public const int size = (4 + 4) * 4;
+
+        private readonly Vector4 _position;
+        private readonly Vector2 _textureCoordinate;
+
+        public TexturedVertex(Vector4 pos, Vector2 tex)
+        {
+            _position = pos;
+            _textureCoordinate = tex;
+        }
+    }
 }

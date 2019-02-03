@@ -1,8 +1,9 @@
 ﻿#version 450 core
-in vec4 vs_color;
+in vec4 vs_textureCoordinate;
+uniform sampler2D textureObject;
 out vec4 color;
 
 void main(void)
 {
- color = vs_color;
+ color = texelFetch(textureObject, ivec2(vs_textureCoordinate.x, vs_textureCoordinate.y), 0);
 }

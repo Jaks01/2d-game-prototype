@@ -60,6 +60,59 @@ namespace learn_opentk
             return vertices;
         }
 
+        public static TexturedVertex[] CreateTexturedCube(float side, float textureWidth, float textureHeight)
+        {
+            float h = textureHeight;
+            float w = textureWidth;
+            side = side / 2f; // half side - and other half
+
+            TexturedVertex[] vertices =
+            {
+        new TexturedVertex(new Vector4(-side, -side, -side, 1.0f),   new Vector2(0, 0)),
+        new TexturedVertex(new Vector4(-side, -side, side, 1.0f),    new Vector2(0, h)),
+        new TexturedVertex(new Vector4(-side, side, -side, 1.0f),    new Vector2(w, 0)),
+        new TexturedVertex(new Vector4(-side, side, -side, 1.0f),    new Vector2(w, 0)),
+        new TexturedVertex(new Vector4(-side, -side, side, 1.0f),    new Vector2(0, h)),
+        new TexturedVertex(new Vector4(-side, side, side, 1.0f),     new Vector2(w, h)),
+
+        new TexturedVertex(new Vector4(side, -side, -side, 1.0f),    new Vector2(0, 0)),
+        new TexturedVertex(new Vector4(side, side, -side, 1.0f),     new Vector2(w, 0)),
+        new TexturedVertex(new Vector4(side, -side, side, 1.0f),     new Vector2(0, h)),
+        new TexturedVertex(new Vector4(side, -side, side, 1.0f),     new Vector2(0, h)),
+        new TexturedVertex(new Vector4(side, side, -side, 1.0f),     new Vector2(w, 0)),
+        new TexturedVertex(new Vector4(side, side, side, 1.0f),      new Vector2(w, h)),
+
+        new TexturedVertex(new Vector4(-side, -side, -side, 1.0f),   new Vector2(0, 0)),
+        new TexturedVertex(new Vector4(side, -side, -side, 1.0f),    new Vector2(w, 0)),
+        new TexturedVertex(new Vector4(-side, -side, side, 1.0f),    new Vector2(0, h)),
+        new TexturedVertex(new Vector4(-side, -side, side, 1.0f),    new Vector2(0, h)),
+        new TexturedVertex(new Vector4(side, -side, -side, 1.0f),    new Vector2(w, 0)),
+        new TexturedVertex(new Vector4(side, -side, side, 1.0f),     new Vector2(w, h)),
+
+        new TexturedVertex(new Vector4(-side, side, -side, 1.0f),    new Vector2(0, 0)),
+        new TexturedVertex(new Vector4(-side, side, side, 1.0f),     new Vector2(0, h)),
+        new TexturedVertex(new Vector4(side, side, -side, 1.0f),     new Vector2(w, 0)),
+        new TexturedVertex(new Vector4(side, side, -side, 1.0f),     new Vector2(w, 0)),
+        new TexturedVertex(new Vector4(-side, side, side, 1.0f),     new Vector2(0, h)),
+        new TexturedVertex(new Vector4(side, side, side, 1.0f),      new Vector2(w, h)),
+
+        new TexturedVertex(new Vector4(-side, -side, -side, 1.0f),   new Vector2(0, 0)),
+        new TexturedVertex(new Vector4(-side, side, -side, 1.0f),    new Vector2(0, h)),
+        new TexturedVertex(new Vector4(side, -side, -side, 1.0f),    new Vector2(w, 0)),
+        new TexturedVertex(new Vector4(side, -side, -side, 1.0f),    new Vector2(w, 0)),
+        new TexturedVertex(new Vector4(-side, side, -side, 1.0f),    new Vector2(0, h)),
+        new TexturedVertex(new Vector4(side, side, -side, 1.0f),     new Vector2(0, 0)),
+
+        new TexturedVertex(new Vector4(-side, -side, side, 1.0f),    new Vector2(0, 0)),
+        new TexturedVertex(new Vector4(side, -side, side, 1.0f),     new Vector2(w, 0)),
+        new TexturedVertex(new Vector4(-side, side, side, 1.0f),     new Vector2(0, h)),
+        new TexturedVertex(new Vector4(-side, side, side, 1.0f),     new Vector2(0, h)),
+        new TexturedVertex(new Vector4(side, -side, side, 1.0f),     new Vector2(w, 0)),
+        new TexturedVertex(new Vector4(side, side, side, 1.0f),      new Vector2(w, h)),
+    };
+            return vertices;
+        }
+
         public static Vertex[] CreateQuad(float size, float z, Color4 color)
         {
             size /= 2;

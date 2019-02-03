@@ -16,7 +16,7 @@ namespace learn_opentk
         private String _title;
         private int _program;
 
-        private List<RenderObject> _rendObjects = new List<RenderObject>();
+        private List<TexturedRenderObject> _rendObjects = new List<TexturedRenderObject>();
 
         public MainWindow () : base(
             1280, 720,              //window x by y
@@ -59,11 +59,7 @@ namespace learn_opentk
         {
 
             CreateProjection();
-            _rendObjects.Add(new RenderObject(ObjectFactory.CreateSolidCube(0.2f, Color4.GreenYellow)));
-            _rendObjects.Add(new RenderObject(ObjectFactory.CreateSolidCube(0.2f, Color4.HotPink)));
-            _rendObjects.Add(new RenderObject(ObjectFactory.CreateSolidCube(0.2f, Color4.BlueViolet)));
-            _rendObjects.Add(new RenderObject(ObjectFactory.CreateSolidCube(0.2f, Color4.Red)));
-            _rendObjects.Add(new RenderObject(ObjectFactory.CreateSolidCube(0.2f, Color4.LimeGreen)));
+            //_rendObjects.Add(new TexturedRenderObject(ObjectFactory.CreateTexturedCube(0.2f, 256, 256), _program))
 
 
             _program = CompileShader();
